@@ -1,7 +1,10 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif, Poppins;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif, Poppins; */
+  font-family: 'Poppins', sans-serif, 'Lato', sans-serif;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
+  text-align: left;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -23,6 +26,7 @@ a:hover {
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   display: flex;
   place-items: center;
@@ -32,8 +36,45 @@ body {
 }
 
 h1 {
+  font-family: 'Poppins';
+  text-align: left;
   font-size: 3.2em;
+  font-weight: 800;
   line-height: 1.1;
+  color: #183B56;
+}
+h2{
+  font-family: 'Poppins';
+  text-align: center;
+  font-size: 3.1em;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #183B56;
+}
+h3{
+  font-family: 'Poppins';
+  text-align: left;
+  font-size: 3.2em;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #183B56;
+}
+h4{
+  font-family: 'Poppins';
+  text-align: left;
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #fff;
+}
+p{
+  font-family: 'Poppins';
+  text-align: left;
+  font-size: 1.0em;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #183B56;
+
 }
 
 button {
@@ -42,7 +83,6 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -61,8 +101,11 @@ button:focus-visible {
 
 #app {
   width: 100%;
-  box-sizing: border-box; 
+  /* box-sizing: border-box;  */
   text-align: center;
+  margin: 0 auto;
+ 
+
 }
 
 @media (prefers-color-scheme: light) {

@@ -76,7 +76,7 @@ export default {
   transition: filter 300ms;
 }
 .logo-text {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 31px;
   letter-spacing: 0em;

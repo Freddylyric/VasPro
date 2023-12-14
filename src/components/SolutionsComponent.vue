@@ -1,8 +1,8 @@
  <template>
 
-    <v-container>
+    <div class="dev-container">
             <v-col lg="12">
-                <h2 class="largeText">Some <span class="greenText">Common Scenarios </span> where Vaspro comes into play...</h2>
+                <h2>Some <span class="greenText">Common Scenarios </span> where Vaspro comes into play...</h2>
                 <p class="mediumText">Get to reach customers and engage growing your business to its full potential</p>
             </v-col>
 
@@ -18,7 +18,7 @@
     
       >
     <template v-slot:title>
-      <v-icon color="#26A842">mdi-bullhorn</v-icon>
+      <v-icon color="#26A842" size="x-large">mdi-bullhorn</v-icon>
       <span class="panel-title ml-3">Campaigns</span>
     </template>
       </v-expansion-panel>
@@ -28,7 +28,7 @@
   text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima"
 >
   <template v-slot:title>
-    <v-icon color="#26A842">mdi-handshake</v-icon>
+    <v-icon color="#26A842" size="x-large">mdi-handshake</v-icon>
     <span class="panel-title ml-3">Business</span>
   </template>
 </v-expansion-panel>
@@ -38,7 +38,7 @@
       text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima"
     >
     <template v-slot:title>
-    <v-icon color="#26A842">mdi-ticket</v-icon>
+    <v-icon color="#26A842" size="x-large">mdi-ticket</v-icon>
     <span class="panel-title ml-3">Events</span>
   </template>
       </v-expansion-panel>
@@ -49,7 +49,7 @@
       text="This allows you to send highly targeted and relevant messages to specific groups, increasing the likelihood of conversion."
     >
     <template v-slot:title>
-    <v-icon color="#26A842">mdi-bell</v-icon>
+    <v-icon color="#26A842" size="x-large">mdi-bell</v-icon>
     <span class="panel-title ml-3">Notifications</span>
   </template>
       </v-expansion-panel>
@@ -62,7 +62,7 @@
             
             </v-row>
     
-    </v-container>
+          </div>
 </template>
 
 <script>
@@ -84,7 +84,14 @@ export default {
 
 <style scoped>
 
-
+.dev-container {
+  background-color: #f8fcf9;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
 
 
 .expansion-panels-container {
@@ -123,14 +130,14 @@ export default {
 
 
 
-.largeText{
+.panel-title{
 
   font-style: normal;
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 52px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 30px;
   letter-spacing: 0em;
-  text-align: center;
+  text-align: left;
   color: #183B56;
 }
 .greenText{
@@ -145,13 +152,8 @@ export default {
 }
 
 .mediumText{
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0em;
   text-align: center;
-  color: #183B56;
-  margin-top: 1%;
+  font-size: 1.25rem;
 }
 
 </style> 

@@ -18,7 +18,7 @@
 
     <v-col >
 
-        <code-display :code="code" :languages ="languages" />
+        <code-display :codeSnippets="codeSnippets" :languages ="languages" />
 
     </v-col>
 </v-row>
@@ -37,20 +37,40 @@ export default {
     },
     data() {
         return {
-            code: `import axios from 'axios';
+            
 
-const api = axios.create({
-  baseURL: 'https://api.example.com',
-});
+  codeSnippets: {
 
-api.get('/api')
-  .then(response => {
-    console.log(response.data);
-  })
-  .catch(error => {
-    console.error(error);
-  });`,
-            languages: ["Node.js", "Ruby", "Python", "Go", "PHP", "Javascript"]
+        'Node.js': 
+        `const axios = require('axios');
+          const api = axios.create({
+            baseURL: 'https://api.example.com',
+          });`,
+        Ruby: 'puts "Hello, World!"',
+        
+        Python: 'print("Hello, World!")',
+        Go: 'fmt.Println("Hello, World!")',
+        PHP: '<?php echo "Hello, World!"; ?>',
+        
+        Javascript: 
+        `import axios from 'axios';
+
+          const api = axios.create({
+            baseURL: 'https://api.example.com',
+          });
+
+          api.get('/api')
+            .then(response => {
+                console.log(response.data);
+            })
+            .catch(error => {
+                console.error(error);
+             });`,
+        
+        // Add more languages and code snippets as needed
+      },
+  
+            languages: ["Node.js","Ruby", "Python", "Go", "PHP", "Javascript"]
         }
     }
 
@@ -95,7 +115,7 @@ api.get('/api')
 .HbtnX{ 
     width: 142px;
  
-  padding: 8px;
+  
   border-radius: 12px;
   border: 2px solid #FFFFFF;
 }

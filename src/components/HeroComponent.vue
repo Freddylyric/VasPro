@@ -1,32 +1,19 @@
 <template>
-    <v-container class="dev-container mt-16">
-        <v-row>
-
-            <!-- <v-card lg = "6"
-                loading="false"
-                title="Making Every Interaction count"
-                subtitle=""
-                text="Our cutting-edge platform empowers you to connect with your customers,
-                     foster meaningful engagement, and propel the growth of your business."
-            
-            >
-                <v-card-actions>
-                    <v-btn color="green" class ="white--text" x-large rounded>Get Started</v-btn>
-                </v-card-actions>
-            </v-card> -->
-            <v-col lg = "6 d-flex flex-column"  >
-                <h2 class="largeText mt-16">Making Every Interaction count</h2>
-                <p class="mediumText">Our cutting-edge platform empowers you to connect with your customers,
+    <div class="dev-container" >
+        <v-row> 
+            <v-col xs="12" lg = "5 d-flex flex-column"  >
+                <h1 class="mt-16">Making Every Interaction count</h1>
+                <p>Our cutting-edge platform empowers you to connect with your customers,
                      foster meaningful engagement, and propel the growth of your business.</p>
                  <v-btn color="green" class="Hbtn pb-9" > Get Started</v-btn>
             </v-col>
             
 
-            <v-col lg = "6">
+            <v-col lg = "6" xs="12">
                 <img width="100%" src="../assets/hero.svg" alt="hero image">
             </v-col>
         </v-row>
-    </v-container>
+    </div>
 
 </template>
 
@@ -37,7 +24,11 @@ export default {
 </script>
 
 <style scoped>
+.dev-container {
+   background-color: #f8fcf9;
+   padding: 5rem;
 
+}
 .largeText {
   
   font-style: normal;
@@ -50,7 +41,7 @@ export default {
   margin-bottom: 20px;
 }
 
-.mediumText{
+/* .mediumText{
     font-family: 'Poppins';
   font-style: normal;
   font-size: 16px;
@@ -59,7 +50,7 @@ export default {
   letter-spacing: 0em;
   text-align: left;
   color: #183B56;
-}
+} */
 .Hbtn{
     width: 266px;
     height: 282px;

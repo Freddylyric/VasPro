@@ -3,14 +3,14 @@
     <v-col lg="20">
     <div class="code-display">
         <div class="language-tabs">
-      <button v-for="language in languages" :key="language" @click="selectLanguage(language)">
+          <button v-for="language in languages" :key="language" @click="selectLanguage(language)" class="language-tab">
         {{ language }}
       </button>
      
     </div>
     <v-divider class="divider"> </v-divider>
     <pre class="code-container ">
-      <code :class="`language-${selectedLanguage.toLowerCase()}`">{{ code }}</code>
+      <code :class="`language-${selectedLanguage.toLowerCase()}`">{{ getCodeSnippet(selectedLanguage) }}</code>
     </pre>
     </div>
     </v-col>
@@ -25,12 +25,13 @@
   
   export default {
     props: {
-      code: String,
       languages: Array,
+      codeSnippets: Object
+      
     },
-    mounted() {
-    Prism.highlightAll();
-  },
+  //   mounted() {
+  //   Prism.highlightAll();
+  // },
     data() {
       return {
         selectedLanguage: this.languages[0], // Default to the first language
@@ -39,8 +40,15 @@
     methods: {
       selectLanguage(language) {
         this.selectedLanguage = language;
+        Prism.highlightAll(); // Re-highlight code when language changes
       },
+      getCodeSnippet(language) {
+      return this.codeSnippets[language] || ''; // Default to an empty string if snippet not found
     },
+    },
+    mounted() {
+    Prism.highlightAll(); // Initial highlighting when component is mounted
+  },
   };
   </script>
   
@@ -61,11 +69,18 @@
     
     
   }
+  .language-tab {
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 5px;
+  color: #fff; /* Text color for the language tabs */
+  font-size: 14px; /* Adjust the font size as needed */
+}
   
   .language-tabs button:hover {
     border: #DBDBDB solid 1px;
     border-radius: 5px;
-    background-color: #ddd;
+    background-color: #193C56;
   }
 
   .code-display {
@@ -82,6 +97,8 @@
   margin: 0;
   border-radius: 12px;
   overflow: auto;
+  max-height: 350px;
+  min-height: 350px;
 }
 
 pre code {
@@ -92,7 +109,7 @@ pre code {
   font-size: 14px;
 }
 .divider{
-    border: 1px solid black
+    border: 1px solid white
 }
 
 .mediumText{

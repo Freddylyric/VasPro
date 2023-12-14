@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/lato": "^5.0.18",
+    "@fontsource/poppins": "^5.0.8",
     "prismjs": "^1.29.0",
     "vue": "^3.3.8",
     "vuetify": "^3.4.4"

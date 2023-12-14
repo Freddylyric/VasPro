@@ -1,4 +1,7 @@
 import { createApp } from 'vue'
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/800.css';
+import '@fontsource/lato';
 import './style.css'
 import App from './App.vue'
 
