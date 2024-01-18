@@ -53,7 +53,7 @@
       <!-- Third Section -->
       <v-row class="mb-8">
         <v-col lg="6">
-          <h1>Engage.</h1>
+          <h1 @click="navigatoEngageComponent">Engage.</h1>
           <h2 class="mediumText">Increase Customer Loyalty and Interaction</h2>
           <p>Get feedback from your clients with our robust features that get you to interact with your clients one on one.</p>
           <v-row class="mt-4">
@@ -142,14 +142,17 @@
         Reachtabs: ['Bulk SMS', 'WhatsApp', 'Email'],
         Engagetabs: ['Survey', 'USSD', 'Short Codes'],
         Growtabs: ['Contacts', 'AI', 'API'],
-
       };
     },
     methods: {
       handleTabClick(tab) {
         // Handle tab click event
         console.log(`Clicked on tab: ${tab}`);
+        
       },
+      navigatoEngageComponent() {
+      this.$router.push('/engage'); // Use router to navigate
+    },
     },
   };
   </script>

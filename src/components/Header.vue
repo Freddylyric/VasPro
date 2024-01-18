@@ -16,8 +16,8 @@
       
       <v-spacer/>
       <v-list class="d-flex align-center">
-        <v-list-item v-for="(menu, i) in menus" :key="i" :to="menu.route" @click="$router.push(menu.route)">
-          <v-list-item-title>{{ menu.title }}</v-list-item-title>
+       <v-list-item v-for="(menu, i) in menus" :key="i" :to="menu.route" @click="$router.push(menu.route)">
+         <v-list-item-title>{{ menu.title }}</v-list-item-title>
         </v-list-item>
       </v-list>
       <v-spacer/>

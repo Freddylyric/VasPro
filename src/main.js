@@ -4,6 +4,8 @@ import '@fontsource/poppins/800.css';
 import '@fontsource/lato';
 import './style.css'
 import App from './App.vue'
+import router from './router';
+
 
 // Vuetify
 import 'vuetify/styles'
@@ -18,5 +20,14 @@ const vuetify = createVuetify({
   //   iconfont: 'mdi', // 'mdi' for Material Design Icons
   // },
 })
+const app = createApp(App);
+// Use Vuetify
+app.use(vuetify);
 
-createApp(App).use(vuetify).mount('#app')
+// Use Vue Router
+app.use(router);
+
+// Mount the app
+app.mount('#app');
+
+///createApp(App).use(vuetify).mount('#app')
