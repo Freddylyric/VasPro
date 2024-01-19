@@ -57,7 +57,7 @@
 
 </div>
 <v-col>
- <img  class="solutions-img" width="100%" src="../assets/solution.svg" alt="hero image">
+ <img  class="solutions-img" width="100%" src="@/assets/solution.svg" alt="hero image">
 </v-col>
             
             </v-row>

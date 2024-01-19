@@ -9,9 +9,9 @@
       
   
       <!-- Second Section -->
-      <v-row class="mb-8 mt-8">
-        <v-col lg="6">
-          <img src="../assets/reach.svg" alt="reach" width="100%" />
+      <v-row class="mb-8 mt-8 ">
+        <v-col lg="6 pr-md-16">
+          <img src="@/assets/reach.svg" alt="reach" width="100%" />
         </v-col>
        
         <v-col lg="6">
@@ -32,19 +32,20 @@
                   </v-card-title>
                 </v-card>
               
-              <v-row class="mt-2">
+              
                 <v-col>
                   <p class="subtitle-2">Featured products</p>
                   <v-row>
 
-    <v-col v-for="(tab, index) in Reachtabs" :key="index">
-      <div class="green-text-tab" @click="handleTabClick(tab)">
+    <div elevation="6" v-for="(tab, index) in Reachtabs" :key="index">
+      <div class="green-text-tab mr-8"  style="cursor:pointer"
+      @click="handleTabClick(tab)">
         {{ tab }}
       </div>
-    </v-col>
+    </div>
   </v-row>
                 </v-col>
-              </v-row>
+             
             </v-col>
           </v-row>
         </v-col>
@@ -87,14 +88,14 @@
           </v-row>
         </v-col>
         <v-col lg="6">
-          <img src="../assets/engage.svg" alt="Your Image 2" width="100%" />
+          <img src="@/assets/engage.svg" alt="Your Image 2" width="100%" />
         </v-col>
       </v-row>
   
       <!-- Fourth Section -->
       <v-row>
         <v-col lg="6" md="6">
-          <img src="../assets/Grow.svg" alt="Your Image 3" width="100%" />
+          <img src="@/assets/Grow.svg" alt="Your Image 3" width="100%" />
         </v-col>
         <v-col lg="6">
           <h1 >Grow.</h1>

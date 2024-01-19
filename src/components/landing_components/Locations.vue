@@ -86,7 +86,7 @@
 
 
             <v-col lg="6">
-                <img src="../assets/africa.svg" alt="map">
+                <img src="@/assets/africa.svg" alt="map">
             </v-col>
         </v-row>
        

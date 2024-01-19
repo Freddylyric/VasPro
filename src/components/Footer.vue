@@ -13,9 +13,9 @@
             <p class="white--text mb-8">Our core business is to partner with all types of clients and help them <span class="white--text--bold"> Reach, Engage and Grow.</span></p>
 
             <v-row no-gutters >
-      <v-col v-for="icon in socialMediaIcons" :key="icon" class="text-center">
-        <v-icon size="24" color="#1F4152" class="sm-icons">{{ icon }}</v-icon>
-      </v-col>
+      <div v-for="icon in socialMediaIcons" :key="icon" class="text-center">
+        <v-icon size="24" color="#1F4152" class="sm-icons mr-3">{{ icon }}</v-icon>
+      </div>
     </v-row>
 
             </v-col>
@@ -85,7 +85,6 @@
       <v-list-item-content>
         <v-row align="center">
           <v-col cols="auto" class="mr-1">
-            <!-- Replace the icon with an image of the country flag -->
             <img src="../assets/Flag_of_Tanzania.svg" alt="Country Flag" class="flag-icon" />
           </v-col>
           <v-col>
@@ -118,7 +117,7 @@
   </v-col>
 
         </v-row>
-        <v-divider color="white" class="divider"></v-divider>
+        <v-divider style="height: 10px; color: #fff;"></v-divider>
         <v-footer  class="footer" mt-16>
     <v-row justify="space-between">
       <v-col>

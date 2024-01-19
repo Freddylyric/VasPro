@@ -6,7 +6,7 @@
           <button v-for="language in languages" :key="language" @click="selectLanguage(language)" class="language-tab">
         {{ language }}
       </button>
-     
+      
     </div>
     <v-divider class="divider"> </v-divider>
     <pre class="code-container ">

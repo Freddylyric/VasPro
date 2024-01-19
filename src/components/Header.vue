@@ -1,69 +1,72 @@
 <template>
-     <v-app-bar
-          style="padding: 12px 0.8em"
-      app
-      color= "white"
-      light
-      elevation ="4"
-      elevate-on-scroll
-      >
-      <v-toolbar-title>
-  <div class="logo-container">
-    <img src="../assets/main-logo.svg" class="logo">
-    <span class="logo-text">Vaspro</span>
-  </div>
+  <v-app-bar
+    style="padding: 12px 0.8em"
+  app
+  color= "white"
+  light
+  elevation ="4"
+  elevate-on-scroll
+  >
+  <v-toolbar-title>
+<div class="logo-container">
+ <img src="../assets/main-logo.svg" class="logo">
+ <span class="logo-text">Vaspro</span>
+</div>
 </v-toolbar-title>
-      
-      <v-spacer/>
-      <v-list class="d-flex align-center">
-        <v-list-item v-for="(menu, i) in menus" :key="i" :to="menu.route" @click="$router.push(menu.route)">
-          <v-list-item-title>{{ menu.title }}</v-list-item-title>
-        </v-list-item>
-      </v-list>
-      <v-spacer/>
-      <v-list class="d-flex align-center">
-        <v-list-item>
-          <v-list-item-title>Login</v-list-item-title>
-        </v-list-item>
-        <v-list-item>
-          <v-list-item-title>Sign up</v-list-item-title>
-        </v-list-item>
-        
-      </v-list>
+   
+  <v-spacer/>
+  <v-list class="d-flex align-center">
+   <v-list-item v-for="(menu, i) in menus" :key="i" :to="menu.route" @click="$router.push(menu.route)">
+    <v-list-item-title>{{ menu.title }}</v-list-item-title>
+   </v-list-item>
+  </v-list>
+  <v-spacer/>
+  <v-list class="d-flex align-center">
+   <v-list-item>
+    <v-list-item-title>Login</v-list-item-title>
+   </v-list-item>
+   <v-list-item>
+    <!-- <v-list-item-title>Sign up</v-list-item-title> -->
+    <v-btn color="#26A842" class="border-radius-16">Sign up</v-btn>
+   </v-list-item>
+    
+  </v-list>
 
-      
-    </v-app-bar>
+   
+ </v-app-bar>
 </template>
 
 <script>
 
 export default {
-  name: 'Header',
-  data: () => ({
-    menus: [
-      {
-        title: 'Products',
-        route: '/products',
-      },
-      {
-        title: 'Solutions',
-        route: '/solutions',
-      },
-      {
-        title: 'Developers',
-        route: '/developers',
-      },
-      {
-        title: 'Pricing',
-        route: '/pricing',
-      },
-    ]
-  }),
+name: 'Header',
+data: () => ({
+ menus: [
+  {
+   title: 'Products',
+   route: '/products',
+  },
+  {
+   title: 'Solutions',
+   route: '/solutions',
+  },
+  {
+   title: 'Developers',
+   route: '/developers',
+  },
+  {
+   title: 'Pricing',
+   route: '/pricing',
+  },
+ ]
+}),
 
 }
-
-
 </script>
+
+
+
+
 
 <style> 
 .logo-container {

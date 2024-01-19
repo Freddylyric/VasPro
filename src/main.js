@@ -1,9 +1,13 @@
 import { createApp } from 'vue'
 import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/500.css';
+import '@fontsource/poppins/600.css';
 import '@fontsource/poppins/800.css';
+import '@fontsource/poppins';
 import '@fontsource/lato';
 import './style.css'
 import App from './App.vue'
+import router from './router.js'
 
 // Vuetify
 import 'vuetify/styles'
@@ -19,4 +23,12 @@ const vuetify = createVuetify({
   // },
 })
 
-createApp(App).use(vuetify).mount('#app')
+// createApp(App).use(vuetify).mount('#app')
+
+const app = createApp(App)
+//vuetify
+app.use(vuetify)
+//router
+app.use(router)
+//mount app
+app.mount('#app')
