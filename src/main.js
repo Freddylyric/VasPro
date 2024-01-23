@@ -9,6 +9,10 @@ import './style.css'
 import App from './App.vue'
 import router from './router.js'
 
+//phone
+import VueTelInput from 'vue-tel-input';
+import 'vue-tel-input/vue-tel-input.css';
+
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
@@ -30,5 +34,7 @@ const app = createApp(App)
 app.use(vuetify)
 //router
 app.use(router)
+//phone selector
+app.use(VueTelInput);
 //mount app
 app.mount('#app')

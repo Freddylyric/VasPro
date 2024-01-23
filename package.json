@@ -11,9 +11,13 @@
   "dependencies": {
     "@fontsource/lato": "^5.0.18",
     "@fontsource/poppins": "^5.0.8",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
     "prismjs": "^1.29.0",
+    "vee-validate": "^4.12.4",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5",
+    "vue-tel-input": "^8.3.1",
     "vuetify": "^3.4.4"
   },
   "devDependencies": {

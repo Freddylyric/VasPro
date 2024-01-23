@@ -10,7 +10,9 @@
 
         <v-tabs v-model="tab" selected-class="active-tab" class="pl-16 pr-16 "
           style="background-color: #183B56;  align-items: center; border-radius: 50px;">
-          <v-tab :value="1" style="text-transform: capitalize; border-radius: 50px; height: 40px;">Bulk SMS </v-tab>
+          <v-tab :value="1" variant="solo" style="text-transform: capitalize; border-radius: 50px; height: 40px;">Bulk
+            SMS
+          </v-tab>
           <v-tab :value="2" style="text-transform: capitalize; border-radius: 50px; height: 40px;">Whatsapp</v-tab>
           <v-tab :value="3" style="text-transform: capitalize; border-radius: 50px; height: 40px;">Email</v-tab>
         </v-tabs>

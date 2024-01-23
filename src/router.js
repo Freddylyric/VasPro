@@ -7,6 +7,8 @@ import Solutions from './components/landing_components/SolutionsComponent.vue';
 import Developers from './components/landing_components/DevelopersComponent.vue';
 import Pricing from './views/Pricing.vue';
 import Reach from './views/Reach.vue';
+import SignUp from './views/auth/SignUp.vue'
+import Login from './views/auth/Login.vue'
 
 
 const routes = [
@@ -16,6 +18,8 @@ const routes = [
   { path: '/developers', component: Developers },
   { path: '/pricing', component: Pricing },
   { path: '/reach', component: Reach },
+  { path: '/signup', component: SignUp},
+  { path: '/login', component: Login},
 
 
 ];
