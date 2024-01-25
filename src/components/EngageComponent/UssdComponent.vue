@@ -1,5 +1,5 @@
 <template>
-                <v-container  mt-16>
+                <v-container  >
 
     <div id="ussd-section" class="section">
     <!-- Your USSD section content goes here -->
@@ -106,9 +106,36 @@
 </v-row> 
 </v-container> 
   </div> 
-  </v-container> 
-</template>
 
+  </v-container> 
+  <Footer></Footer>
+
+</template>
+<script>
+import Footer from '../Footer.vue';
+
+export default {
+  created () {
+  },
+    components: {
+    Footer,
+    
+  },
+watch: {
+},
+  data() {
+    return {
+       isVisible: false,
+    };
+  },
+  methods: {
+  toggleVisibility() {
+    this.isVisible = !this.isVisible;
+  },
+}
+
+};
+</script>
 <style scoped>
 .survey{
     padding-top: 80px;

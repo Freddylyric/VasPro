@@ -97,7 +97,7 @@
           <img src="../assets/Grow.svg" alt="Your Image 3" width="100%" />
         </v-col>
         <v-col lg="6">
-          <h1 >Grow.</h1>
+          <h1 @click="navigatoGrowComponent" >Grow.</h1>
           <h2 class="mediumText">One stop shop for all your clients.</h2>
           <p >Make engaging and reaching your clients easier than it has been before with automated systems which are fast giving quick and accurate responses.</p>
           <v-row class="mt-4">
@@ -149,6 +149,10 @@
         // Handle tab click event
         console.log(`Clicked on tab: ${tab}`);
         
+      },
+      navigatoGrowComponent(){
+        this.$router.push('/grow'); // Use router to navigate
+
       },
       navigatoEngageComponent() {
       this.$router.push('/engage'); // Use router to navigate

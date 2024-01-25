@@ -64,7 +64,10 @@ comprehensive solution to elevate your marketing efforts and achieve sustainable
 <v-row class="mb-8 mt-8">
 
 <v-col lg="6" class="survey">
-<img src="../../assets/pexel.png" alt="Image" class="rounded-image"  />
+  <v-container class="rounded-image"  style="background-color: #D9D9D9; width: 394px; height: 674px;">
+    <img src="../../assets/pexel.png" alt="Image" class="centered-image"  />
+
+  </v-container>
 
 </v-col>
 <v-col lg="6" class="survey" >
@@ -228,13 +231,36 @@ Send Bulk payments at a future date and time automatically from your payment wal
 
 </v-col>
 </v-row> 
+
+
+
 </v-container> 
+
+<v-row class="survey">
+  <img src="../../assets/nel.png" alt="Image" width="686px" height="433px" />
+<v-col justify-center align-center style="padding-top: 160px;">
+  <h1  style="color: #183B56; font-weight: 600; font-size:20px;text-align: center; ">Ready to Harness the Power of Surveys </h1>
+  <p  style="font-weight: 400; font-size:16px;text-align: center;  ">
+    Get started with our survey services today. Contact us for a free consultation, and let's discuss how we can tailor our survey solutions to meet your unique needs..</p>
+
+</v-col>
+</v-row>
 </div>  
 
 </v-container>
+<Footer></Footer>
 
-</template><script>
+</template>
+<script>
+import Footer from '../Footer.vue';
+
 export default {
+  created () {
+  },
+    components: {
+    Footer,
+    
+  },
 watch: {
 },
   data() {
@@ -286,7 +312,14 @@ watch: {
 }
 .rounded-image {
   border-radius: 60%;
+
+}
+.centered-image {
+  text-align: center;
+  border-radius: 60%;
   width: 405px;
   height: 674px;
+  margin-right:50px;
+
 }
 </style>

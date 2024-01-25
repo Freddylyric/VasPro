@@ -91,7 +91,7 @@ export default {
 .largeText {
   
   font-style: normal;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 800;
   line-height: 67px;
   letter-spacing: 0em;

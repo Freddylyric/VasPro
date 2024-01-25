@@ -4,16 +4,16 @@
             <v-col  lg = "0 d-flex flex-column align-center" >
               
               <v-col>
-      <h2 class="en" style="color: #FF9327; font-weight: bold;">Engage</h2>
+      <h2 class="en" style="color: #FF9327; font-weight: bold;">Grow</h2>
       <h1 class="boost" style="color: #183B56; font-weight: 800; font-size: xx-large;">Boost your Client Trust</h1>
       <p class="par" style="color: #183B56; font-weight: 400; font-size: xx-large;">through these Interactions...</p>
     </v-col>
                 <div class="d-flex flex-column align-center mt-16" style="background: #183B56; padding: 2px; width: 532px;  height: 44px;   color: #F8FCF9;  border-radius: 36px">
                  
          <v-tabs v-model="tab" align-tabs="center"  selected-class="active-tab" class="customm-tab" >
-          <v-tab :value="1" class="custom-tab" style="text-transform: capitalize; border-radius: 50px; height: 40px; ">Surveys </v-tab>
-          <v-tab :value="2" class="custom-tab" style="text-transform: capitalize; border-radius: 50px; height: 40px;">USSD</v-tab>
-          <v-tab :value="3" class="custom-tab" style="text-transform: capitalize; border-radius: 50px; height: 40px;">Shortcodes</v-tab>
+          <v-tab :value="1" class="custom-tab" style="text-transform: capitalize; border-radius: 50px; height: 40px; ">Contacts</v-tab>
+          <v-tab :value="2" class="custom-tab" style="text-transform: capitalize; border-radius: 50px; height: 40px;">AI</v-tab>
+          <v-tab :value="3" class="custom-tab" style="text-transform: capitalize; border-radius: 50px; height: 40px;">API</v-tab>
         </v-tabs>
     
    </div>      
@@ -21,19 +21,16 @@
     
         </div>
     
-        <div>
-                           
+        <div>                    
         <v-window v-model="tab">
           <v-window-item :value="1">
-            <SurveyComponent />
+            <GrowContactsComponent />
           </v-window-item>
-    
           <v-window-item :value="2">
-            <UssdComponent />
+            <GrowAiComponent />
           </v-window-item>
-    
           <v-window-item :value="3">
-            <ShortcodesComponent/>
+            <GrowApiComponent/>
           </v-window-item>
         </v-window>
         </div>
@@ -43,15 +40,15 @@
     
     
   <script>
-import SurveyComponent from './EngageComponent/SurveyComponent.vue';
-import ShortcodesComponent from './EngageComponent/ShortcodesComponent.vue';
-import UssdComponent from './EngageComponent/UssdComponent.vue';
+import GrowContactsComponent from '././GrowComponent/GrowContactsComponent.vue';
+import GrowAiComponent from './GrowComponent/GrowAiComponents.vue';
+import GrowApiComponent from './GrowComponent/GrowApiComponent.vue';
 
 export default {
     components: {
-    SurveyComponent,
-    ShortcodesComponent,
-    UssdComponent
+        GrowContactsComponent,
+        GrowAiComponent,
+        GrowApiComponent
   },
   watch: {
   },
@@ -144,8 +141,6 @@ export default {
   color: black; 
   border-radius: 50px;
   text-decoration: none !important;
-
-
   
 }
 

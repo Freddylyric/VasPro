@@ -6,6 +6,8 @@ import LandingPage from './views/LandingPage.vue';
 import Solutions from './components/SolutionsComponent.vue';
 import Developers from './components/DevelopersComponent.vue';
 import EngageComponent from './components/EngageComponent.vue';
+import GrowComponent from './components/GrowComponent.vue';
+
 
 
 const routes = [
@@ -14,6 +16,8 @@ const routes = [
   { path: '/solutions', component: Solutions },
   { path: '/developers', component: Developers },
   { path: '/engage', component: EngageComponent },
+  { path: '/grow', component: GrowComponent },
+
 ];
   
 
