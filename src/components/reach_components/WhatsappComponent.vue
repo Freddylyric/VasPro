@@ -16,6 +16,7 @@
                 <img width="100%" src="@/assets/bulksms.svg" alt="hero image">
             </v-col>
         </v-row>
+
         <v-row
             style="min-height: 100px; background: #F2FAF4; border-radius: 24px; box-shadow: 2rem; margin-left: 4rem; margin-right: 4rem; margin-bottom: 4rem;"
             class="d-flex justify-center">

@@ -9,6 +9,8 @@ import Pricing from './views/Pricing.vue';
 import Reach from './views/Reach.vue';
 import SignUp from './views/auth/SignUp.vue'
 import Login from './views/auth/Login.vue'
+import Verify from './views/auth/Verify.vue'
+import ForgotPassword from './views/auth/ForgotPassword.vue'
 
 
 const routes = [
@@ -20,6 +22,8 @@ const routes = [
   { path: '/reach', component: Reach },
   { path: '/signup', component: SignUp},
   { path: '/login', component: Login},
+  { path: '/verify', component: Verify},
+  { path: '/forgot-password', component: ForgotPassword},
 
 
 ];

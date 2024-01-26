@@ -24,6 +24,7 @@
                         in any other currency.</p>
                     <v-btn color="green" class=" pb-9 pt-4"
                         style="  border-radius: 10px; text-transform: capitalize; width: 40%;"> Get Started</v-btn>
+
                 </v-col>
 
 

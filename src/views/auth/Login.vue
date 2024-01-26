@@ -20,8 +20,8 @@
 
                             <v-card-text>
                                 <form @submit.prevent="submit">
-                                    <v-text-field label="Email" outlined dense></v-text-field>
-                                    <v-text-field label="Password" outlined dense></v-text-field>
+                                    <v-text-field variant="solo-filled" label="Email" outlined dense></v-text-field>
+                                    <v-text-field variant="solo-filled" label="Password" outlined dense></v-text-field>
                                     <v-btn color="#26A842" class="border-radius-16"
                                         style="width: 100%; margin-top: 16px; height: 52px;">Login</v-btn>
                                 </form>
