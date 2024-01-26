@@ -1,3 +1,4 @@
+<!-- App.vue -->
 <template>
   <v-app class="whitebg">
     <v-main>
@@ -21,7 +22,7 @@ export default {
   
 
   },
-  data(){
+  data() {
     return {
       menus: [
         {
@@ -40,24 +41,15 @@ export default {
           title: 'Pricing',
           route: '/pricing',
         },
-      ]
-  }
-}
+      ],
+    };
+  },
 };
-
 </script>
 
 <style scoped>
 .whitebg {
   background-color: white;
   width: 100%;
-
 }
-
-/* .main-container {
-  background-color: white;
-  width: 100%;
-} */
-
-
 </style>

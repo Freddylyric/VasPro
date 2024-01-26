@@ -16,11 +16,14 @@
     <v-spacer />
     <v-list class="d-flex align-center">
       <v-list-item>
-        <v-list-item-title @click="$router.push('/login')">Login</v-list-item-title>
+        <v-btn color="#26A842" style="text-transform: capitalize;" @click="$router.push('/login')"> Login</v-btn>
       </v-list-item>
       <v-list-item>
         <!-- <v-list-item-title>Sign up</v-list-item-title> -->
-        <v-btn color="#26A842" class="border-radius-16" @click="$router.push('/signup')">Sign up</v-btn>
+        <v-btn variant="tonal" style="background-color:#26A842; color: white; text-transform: capitalize; "
+          class="border-radius-16" @click="$router.push('/signup')">
+          Sign up
+        </v-btn>
       </v-list-item>
 
     </v-list>

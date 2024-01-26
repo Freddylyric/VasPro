@@ -1,0 +1,164 @@
+<template>
+    <v-main style="background: #F8FCF9;"> 
+        <div class=" pl-16 pr-16 d-flex align-center justify-center" style="height:358px; ">
+            <v-col  lg = "0 d-flex flex-column align-center" >
+              
+              <v-col>
+      <h2 class="en" style="color: #FF9327; font-weight: bold;">Grow</h2>
+      <h1 class="boost" style="color: #183B56; font-weight: 800; font-size: xx-large;">Boost your Client Trust</h1>
+      <p class="par" style="color: #183B56; font-weight: 400; font-size: xx-large;">through these Interactions...</p>
+    </v-col>
+                <div class="d-flex flex-column align-center mt-16" style="background: #183B56; padding: 2px; width: 532px;  height: 44px;   color: #F8FCF9;  border-radius: 36px">
+                 
+         <v-tabs v-model="tab" align-tabs="center"  selected-class="active-tab" class="customm-tab" >
+          <v-tab :value="1" class="custom-tab" style="text-transform: capitalize; border-radius: 50px; height: 40px; ">Contacts</v-tab>
+          <v-tab :value="2" class="custom-tab" style="text-transform: capitalize; border-radius: 50px; height: 40px;">AI</v-tab>
+          <v-tab :value="3" class="custom-tab" style="text-transform: capitalize; border-radius: 50px; height: 40px;">API</v-tab>
+        </v-tabs>
+    
+   </div>      
+            </v-col>
+    
+        </div>
+    
+        <div>                    
+        <v-window v-model="tab">
+          <v-window-item :value="1">
+            <GrowContactsComponent />
+          </v-window-item>
+          <v-window-item :value="2">
+            <GrowAiComponent />
+          </v-window-item>
+          <v-window-item :value="3">
+            <GrowApiComponent/>
+          </v-window-item>
+        </v-window>
+        </div>
+    </v-main>
+    
+    </template>
+    
+    
+  <script>
+import GrowContactsComponent from '././GrowComponent/GrowContactsComponent.vue';
+import GrowAiComponent from './GrowComponent/GrowAiComponents.vue';
+import GrowApiComponent from './GrowComponent/GrowApiComponent.vue';
+
+export default {
+    components: {
+        GrowContactsComponent,
+        GrowAiComponent,
+        GrowApiComponent
+  },
+  watch: {
+  },
+    data() {
+      return {
+         isVisible: false,
+         tab:1,
+
+      };
+    },
+    methods: {
+    toggleVisibility() {
+      this.isVisible = !this.isVisible;
+    },
+     }
+
+  };
+  </script>
+  
+  <style scoped>
+
+
+  .interaction-column {
+    display: flex;
+    flex-direction: column;
+  }
+.engage-container{ 
+  background-color: #F8F8F8;
+}
+  
+  .en{
+    text-align: center;
+
+    
+  }
+  
+  .boost{
+    text-align: center;
+
+    
+  }
+
+  .par{
+    text-align: center;
+  }
+  .rounded-container {
+  border-radius: 50px;
+  overflow: hidden;
+  width: 532px;
+  height: 44px;
+}
+
+
+.toolbar-item {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: large;
+}
+.toolbar-container {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+  margin-left: 20px;
+  height: 40px;
+}
+
+.toolbar-item1 {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: large;
+  margin-bottom: 50px;
+
+}
+.toolbar-item2 {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: large;
+  margin-bottom: 50px;
+
+}
+
+  .interaction-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .active-tab {
+  background: white;
+  color: black; 
+  border-radius: 50px;
+  text-decoration: none !important;
+  
+}
+
+.inactive-tab {
+  background-color: transparent !important;
+  color: white; 
+}
+.custom-tab{
+  text-decoration: none !important;
+  border-radius: 10px;
+  height: 40px;
+  width: 150px;
+  text-transform: capitalize;
+}
+
+.customm-tab{
+  text-decoration: none !important;
+  
+}
+
+  </style>

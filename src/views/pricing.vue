@@ -1,11 +1,11 @@
 <template>
     <v-main>
         <div class="hero pl-16 pr-16 d-flex align-center justify-center" style="height:500px;">
-            <v-col xs="12" lg = "0 d-flex flex-column align-center" >
+            <v-col xs="12" lg="0 d-flex flex-column align-center">
                 <h1 style="color: #FF9327;">Pricing</h1>
-                <h2  style="font-size: 1.9em;">Simple pricing that works at your scale</h2>
+                <h2 style="font-size: 1.9em;">Simple pricing that works at your scale</h2>
                 <p class="hero-text">Explore Our Pricing Tiers...</p>
-                
+
             </v-col>
 
         </div>
@@ -17,13 +17,12 @@
         <Shortcodes />
         <USSDs />
         <Footer />
-        
 
-        
+
+
 
 
     </v-main>
-
 </template>
 
 <script>
@@ -46,15 +45,9 @@ export default {
         USSDs,
         Footer
     },
- 
+
 
 }
 </script>
 
-<style>
-
-
-
-
-
-</style>
+<style></style>

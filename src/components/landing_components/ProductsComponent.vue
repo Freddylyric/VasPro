@@ -39,7 +39,8 @@
             </div>
           </div>
         </v-row>
-        <v-btn color="green" style=" height: 60px; border-radius: 10px; text-transform: capitalize; width: 70%;">
+        <v-btn @click="$router.push({ name: 'Reach' })" color="green"
+          style=" height: 60px; border-radius: 10px; text-transform: capitalize; width: 70%;">
           Reach Your
           Customers Now </v-btn>
       </v-col>
@@ -73,7 +74,8 @@
             </div>
           </div>
         </v-row>
-        <v-btn color="green" style=" height: 60px; border-radius: 10px; text-transform: capitalize; width: 70%;">
+        <v-btn @click="$router.push({ name: 'Engage' })" color="green"
+          style=" height: 60px; border-radius: 10px; text-transform: capitalize; width: 70%;">
           Engage With Your Customers. </v-btn>
       </v-col>
 
@@ -113,7 +115,8 @@
             </div>
           </div>
         </v-row>
-        <v-btn color="green" style=" height: 60px; border-radius: 10px; text-transform: capitalize; width: 70%;">
+        <v-btn @click="$router.push({ name: 'Grow' })" color="green"
+          style=" height: 60px; border-radius: 10px; text-transform: capitalize; width: 70%;">
           Grow Your Business Now </v-btn>
       </v-col>
     </v-row>
