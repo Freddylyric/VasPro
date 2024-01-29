@@ -174,7 +174,7 @@
 </template>
 <script>
 import Footer from '../Footer.vue';
-import DevelopersComponent from '../DevelopersComponent.vue';
+import DevelopersComponent from '@/components/landing_components/DevelopersComponent.vue';
 
 export default {
 created () {

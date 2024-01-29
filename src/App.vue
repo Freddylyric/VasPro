@@ -2,20 +2,25 @@
 <template>
   <v-app class="whitebg">
     <v-main>
-      <Header :menus="menus" />
-      <router-view></router-view>
-     
+    
+        <!-- <Landing /> -->
+        <Header :menus=" menus" />
+        <router-view></router-view>
+
     </v-main>
   </v-app>
 </template>
 
-<script>
-import Header from './components/Header.vue';
+<script >
+import Header from './components/Header.vue'
+
 
 export default {
   name: 'App',
   components: {
     Header,
+  
+
   },
   data() {
     return {
