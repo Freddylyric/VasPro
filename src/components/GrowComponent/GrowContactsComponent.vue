@@ -450,7 +450,7 @@ padding-bottom: 30px;
   margin-left: 100px;
  background-color: #26A842;
   border-radius: 12px;
-  font-size: 12px;
+  font-size: 12 px;
   color: #FFFFFF;
 }
 

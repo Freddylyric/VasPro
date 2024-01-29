@@ -132,15 +132,37 @@
 <p style="font-size: 16px; color: #183B56; line-height: 1.5; margin-bottom: 10px; padding-top: 20px;">
   At VasPro we harness the power of Artificial Intelligence to transform industries, solve complex problems, and shape a smarter future.
 </p>
+<v-row>
+  <v-btn class="custom-button mt-6">Get Started</v-btn>
+<v-btn class="rounded-button mt-6 ml-4 ">Explore Docs</v-btn>
+</v-row>
 
-<v-btn class="custom-button mt-4">Get Started</v-btn>
-<v-btn class=".btn mr-2 mt-4">Explore Docs</v-btn>
 
 
 </v-col>
   </v-row>
 </v-container>
+<v-row>
+  <v-col>
+    <h1  class="boosst" style="color: #183B56; font-weight: 600; font-size:18px; padding-top: 80px;">Innovative Solutions.</h1>
+<p style="font-size: 14px; color: #183B56; line-height: 1.5; margin-bottom: 10px;">
+  Discover cutting-edge AI solutions that drive efficiency, automation, and innovation.
+</p>
+  </v-col>
 
+  <v-col>
+    <h1  class="boosst" style="color: #183B56; font-weight: 600; font-size:18px; padding-top: 80px;">Innovative Solutions.</h1>
+<p style="font-size: 14px; color: #183B56; line-height: 1.5; margin-bottom: 10px;">
+  Discover cutting-edge AI solutions that drive efficiency, automation, and innovation.
+</p>
+  </v-col>
+  <v-col>
+    <h1  class="boosst" style="color: #183B56; font-weight: 600; font-size:18px; padding-top: 80px;">Innovative Solutions.</h1>
+<p style="font-size: 14px; color: #183B56; line-height: 1.5; margin-bottom: 10px;">
+  Discover cutting-edge AI solutions that drive efficiency, automation, and innovation.
+</p>
+  </v-col>
+</v-row>
 </v-container>
 </div>  
 
@@ -190,8 +212,8 @@ text-align: center;
   width: 224px;
   height: 61px;
   border-radius: 9%;
-  border: 2px solid #26A842; /* Green border */
-  margin-right : 20px;
+  border: 2px solid #26A842;
+   /* Green border */
 }
 
 .rounded-icon{
@@ -226,14 +248,12 @@ margin-left: 100px;
 }
 
 .rounded-button{
-width: 142px;
-height: 56px;
-border: 2px solid #FFFFFF;
+width: 224px;
+height: 61px;
+border: 2px solid #26A842;
 border-radius: 10px; 
-padding: 20px; 
-background-color: #193C56;
-color: #FFFFFF;
-padding-bottom: 30px;
+background-color: #FFFFFF;
+color: #26A842;
 }
 .rounded-button2{
 width: 142px;
@@ -266,7 +286,6 @@ background-color: #26A842;
 border-radius: 9px;
 font-size: 14px;
 color: #FFFFFF;
-margin: 0%;
 }
 
 .bottom{
