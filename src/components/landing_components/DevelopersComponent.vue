@@ -1,14 +1,14 @@
 <template>
-  <div class="dev-container">
+  <div class="dev-container pr-4 pl-16">
 
     <v-row>
 
-      <v-col lg="6">
+      <v-col lg="6" >
         <h2 class="largeText">Send your First <span class="orange-box">Message </span> in Minutes with Vaspro APIs</h2>
         <p class="mediumText">The VasPro Developer API Documentation offers all the instructions you need to connect and
           use our services. Our development support team is ready to help you whenever you need help.</p>
-
-        <v-row class="dev-buttons mt-8">
+       
+          <v-row class="dev-buttons mt-8 ml-4">
           <v-btn color="#183B56"
             style="border: 2px solid; border-color: white; border-radius: 10px; height: 56px; min-width: 142px; margin-right: 20px; text-transform: capitalize;">
             <span style="font-weight: 700;"> Explore Docs </span> </v-btn>
@@ -20,14 +20,10 @@
         </v-row>
       </v-col>
 
-
-      <v-col>
-
-        <code-display :codeSnippets="codeSnippets" :languages="languages" />
-
+      <v-col  md="6" >
+        <code-display :codeSnippets="codeSnippets" :languages="languages"/>
       </v-col>
     </v-row>
-
 
   </div>
 </template>
@@ -84,19 +80,18 @@ export default {
 
 <style scoped>
 .dev-container {
-
   padding: 5rem;
   background-color: #193C56;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 20px;
 
 }
 
 .largeText {
-
-  font-style: normal;
-  font-size: 3.5rem;
+ font-style: normal;
+  font-size: 45px;
   font-weight: 800;
   line-height: 67px;
   letter-spacing: 0em;
@@ -106,7 +101,6 @@ export default {
 }
 
 .mediumText {
-
   font-style: normal;
   font-size: 1.0rem;
   font-weight: 400;
@@ -115,6 +109,7 @@ export default {
   text-align: left;
   color: white;
   margin-bottom: 20px;
+  max-width: 80%;
 }
 
 .HbtnX {
@@ -134,4 +129,9 @@ export default {
   transition: background-position 0.3s ease-in-out;
 
 }
+.languages{
+  width: 100%;
+  height: auto;
+  min-width: 395px;
+  }
 </style>

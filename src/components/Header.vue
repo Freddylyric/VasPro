@@ -1,20 +1,24 @@
 <template>
   <v-app-bar style="padding: 12px 0.8em" app color="white" light elevation="4" elevate-on-scroll>
-    <v-toolbar-title>
-      <div class="logo-container">
-        <img src="../assets/main-logo.svg" class="logo">
-        <span class="logo-text">Vaspro</span>
-      </div>
+    <v-toolbar-title class="logo-container d-sm-flex" style="min-width: 60%;">
+      <img src="../assets/main-logo.svg" class="logo">
+      <span class="logo-text">Vaspro</span>
     </v-toolbar-title>
+  
+    <v-list-item  class=" d-sm-none align-end;
+  "  >
+        <v-icon @click="openMenu">mdi-menu</v-icon>
+      </v-list-item>
 
     <v-spacer />
-    <v-list class="d-flex align-center">
+    <v-list class=" align-center d-none d-sm-flex">
       <v-list-item v-for="(menu, i) in menus" :key="i" :to="menu.route" @click="$router.push(menu.route)">
         <v-list-item-title>{{ menu.title }}</v-list-item-title>
       </v-list-item>
     </v-list>
     <v-spacer />
-    <v-list class="d-flex align-center">
+    
+    <v-list class="d-none d-sm-flex">
       <v-list-item>
         <v-btn color="#26A842" style="text-transform: capitalize;" @click="$router.push('/login')"> Login</v-btn>
       </v-list-item>
@@ -25,10 +29,8 @@
           Sign up
         </v-btn>
       </v-list-item>
-
     </v-list>
-
-
+   
   </v-app-bar>
 </template>
 
@@ -66,7 +68,6 @@ export default {
 
 <style> .logo-container {
    display: flex;
-   align-items: center;
  }
 
  .logo {
@@ -78,12 +79,9 @@ export default {
  .logo-text {
    font-size: 20px;
    font-weight: 700;
-   line-height: 31px;
-   letter-spacing: 0em;
-   text-align: left;
    color: #26A842;
-   padding-left: 0;
    margin: 10px;
+   width: 100%;
  }
 
  .logo:hover {

@@ -8,11 +8,9 @@
 
 
         </div>
-
         <p class="mt-5 white--text--bold">Let's grow your business</p>
         <p class="white--text mb-8">Our core business is to partner with all types of clients and help them <span
             class="white--text--bold"> Reach, Engage and Grow.</span></p>
-
         <v-row no-gutters>
           <div v-for="icon in socialMediaIcons" :key="icon" class="text-center">
             <v-icon size="24" color="#1F4152" class="sm-icons mr-3">{{ icon }}</v-icon>
@@ -27,13 +25,12 @@
           <v-col align="left">
             <h4 class="list-title ">PRODUCTS</h4>
             <v-list dense class="prod-list">
-              <v-list-item v-for="product in products" :key="product" @click="handleItemClick(product)">
-
-                <v-list-item-content>
-                  <v-list-item-title class="white--text">{{ product }}</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-            </v-list>
+    <v-list-item v-for="product in products" :key="product" @click="handleItemClick(product)">
+      <v-list-item-content>
+        <v-list-item-title class="white--text">{{ product }}</v-list-item-title>
+      </v-list-item-content>
+    </v-list-item>
+  </v-list>
           </v-col>
 
           <v-col align="left">
@@ -154,7 +151,7 @@ export default {
         'mdi-instagram',
         'mdi-whatsapp',
       ],
-      products: ['Messaging', 'Payments', 'Surveys', 'Customer Promotions', 'USSDs'],
+      products: ['Messaging','Payments','Surveys', 'Customer Promotions', 'USSDs'],
       developers: ['Bulk SMS', 'Transactional SMS', 'Premium SMS', 'Contact Management', 'USSD Service', 'Rewards & utilities'],
       channels: ['SMS', 'USSDs', 'Shortcodes', 'Emails', 'WhatsApp'],
 
@@ -206,6 +203,8 @@ export default {
 
 .prod-list {
   background-color: #1F4152;
+  margin-top: -8px; 
+  margin-bottom: -8px;
 }
 
 .white--text {
@@ -221,8 +220,7 @@ export default {
 }
 
 .list-title {
-
-  margin-left: 0.85rem;
+margin-left: 0.85rem;
 }
 
 .flag-icon {

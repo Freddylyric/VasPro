@@ -1,14 +1,15 @@
 <template>
 
-    <div class="locations ml-16">
+    <div class="locations ml-8">
         <v-row>
-            <v-col lg="6">
-                <h1>Join us at our offices in...</h1>
-                <v-list>
+            <v-col>
+                <h1 class="fontSizeClass font-['Lato']">Join us at our offices in...</h1>
+                <v-list class="pt-16">
+                
     <!-- Nairobi, Kenya -->
-    <v-list-item>
+    <v-list-item  >
       <v-list-item-content>
-        <v-row align="center">
+        <v-row align="start">
           <v-col cols="auto" class="mr-1" >
             <v-list-item-icon>
               <v-icon color="green" size="large">mdi-map-marker</v-icon>
@@ -16,7 +17,7 @@
           </v-col>
           <v-col>
             <v-list-item-title class="city-name">Nairobi, Kenya</v-list-item-title>
-            <v-list-item-subtitle class="address">7th floor, Karlson Towers, Parklands</v-list-item-subtitle>
+            <v-list-item-subtitle class="address">7th floor, Kalson Towers, Parklands</v-list-item-subtitle>
             <v-list-item-subtitle class="telephone">Tel: +254 123 456 789</v-list-item-subtitle>
           </v-col>
         </v-row>
@@ -43,8 +44,7 @@
 
     <!-- Kampala, Uganda -->
 
-
-    <v-list-item>
+    <v-list-item >
       <v-list-item-content>
         <v-row align="center">
           <v-col cols="auto" class="mr-1" >
@@ -62,8 +62,6 @@
     </v-list-item>
 
     <!-- Accra, Ghana -->
-
-
     <v-list-item>
       <v-list-item-content>
         <v-row align="center">
@@ -85,8 +83,8 @@
             </v-col>
 
 
-            <v-col lg="6">
-                <img src="@/assets/africa.svg" alt="map">
+            <v-col >
+                <img src="@/assets/africa.svg" alt="map" class="responsive-image">
             </v-col>
         </v-row>
        
@@ -96,7 +94,14 @@
 
 <script>
 export default {
-    name: "Locations"
+  computed: {
+    fontSizeClass() {
+      // Adjust font size based on screen size
+      return this.$vuetify.breakpoint.smAndDown ? 'small-text' : 'large-text';
+    }
+  },
+    name: "Locations",
+    
 }
 </script>
 
@@ -104,7 +109,22 @@ export default {
 
 .locations {
     margin-top: 100px;
+  
+  }
+.title{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  font:Lato;
 }
+.small-text {
+  font-size: 16px;
+}
+
+.large-text {
+  font-size: 24px;
+}
+
 
 .city-name {
     font-weight: 700;
@@ -134,6 +154,11 @@ export default {
 .flex-container {
   display: flex;
   align-items: center; /* Align items vertically in the center */
+}
+.responsive-image {
+  width: 100%;
+  height: auto;
+  min-width: 395px;
 }
 /* .largeText{
   font-family: 'Lato';

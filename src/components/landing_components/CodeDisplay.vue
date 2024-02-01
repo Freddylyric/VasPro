@@ -1,6 +1,7 @@
 <!-- CodeDisplay.vue -->
 <template>
-  <v-col lg="20">
+  <div>
+    <v-col     >
     <div class="code-display">
       <div class="language-tabs">
         <button v-for="language in languages" :key="language" @click="selectLanguage(language)"
@@ -15,6 +16,8 @@
     </pre>
     </div>
   </v-col>
+  </div>
+  
 </template>
   
 <script>
@@ -22,7 +25,6 @@ import Prism from 'prismjs';
 import 'prismjs/themes/prism.css';
 import 'prismjs/components/prism-javascript';
 import 'prismjs/components/prism-python';
-// Add other languages as needed
 
 export default {
   props: {
@@ -41,14 +43,14 @@ export default {
   methods: {
     selectLanguage(language) {
       this.selectedLanguage = language;
-      Prism.highlightAll(); // Re-highlight code when language changes
+      Prism.highlightAll();
     },
     getCodeSnippet(language) {
-      return this.codeSnippets[language] || ''; // Default to an empty string if snippet not found
+      return this.codeSnippets[language] || ''; 
     },
   },
   mounted() {
-    Prism.highlightAll(); // Initial highlighting when component is mounted
+    Prism.highlightAll(); 
   },
 };
 </script>
@@ -94,12 +96,12 @@ export default {
 }
 
 .code-display {
-  width: 100%;
+  width: 575px;
   background-color: #305067;
   border: 1px solid #DBDBDB;
-
-  border-radius: 12px;
+  border-radius: 15px;
 }
+
 
 .code-container {
   background-color: #305067;
@@ -115,16 +117,13 @@ pre code {
   display: block;
   white-space: pre;
   color: #fff;
-  /* Text color */
   font-family: 'Courier New', monospace;
-  /* Choose an appropriate font-family */
   font-size: 14px;
 }
 
 
 
 .mediumText {
-
   font-style: normal;
   font-size: 1.2rem;
   font-weight: 500;

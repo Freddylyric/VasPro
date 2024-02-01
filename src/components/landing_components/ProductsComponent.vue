@@ -1,22 +1,21 @@
 <template>
-  <div class="prod-container mt-16" style=" padding: 4rem;">
+  <div class="prod-container mt-16 ml-16 mr-16" >
     <!-- First Section -->
 
-    <v-col>
-      <h1 class="solution-title">Build your Business seamlessly for better customer experience</h1>
+    <v-col class="" >
+      <h1 class="solution-title">Build your Business seamlessly  for better customer experience</h1>
       <p class="solution-paragraph">Better your customers experience with our range of products and solutions tailored to
         meet your everyday needs.</p>
     </v-col>
 
 
     <!-- Second Section -->
-    <v-row class="mb-16 mt-16">
-      <v-col lg="6 pr-md-16" style=" min-width: 400px;">
+    <v-row class="mb-16 mt-16 justify-centre  ">
+      <v-col lg="6" xs="12" style=" min-width: 355px;">
         <img src="@/assets/reach.svg" alt="reach" width="100%" />
       </v-col>
 
-      <v-col lg="0 d-flex flex-column justify-center" style="min-height: 500px; min-width: 400px;">
-
+      <v-col lg="0 d-flex flex-column justify-center" style="min-height: 500px; min-width: 355px;">
         <v-divider :thickness="3" class="border-opacity-100" width="40px" color="green"></v-divider>
         <h1 style="line-height: 0.6;">Reach.</h1>
 
@@ -40,22 +39,17 @@
           </div>
         </v-row>
         <v-btn @click="$router.push({ name: 'Reach' })" color="green"
-          style=" height: 60px; border-radius: 10px; text-transform: capitalize; width: 70%;">
+          style=" height: 60px; border-radius: 10px; text-transform: capitalize; width: 360px; margin-top: 20px;">
           Reach Your
           Customers Now </v-btn>
       </v-col>
     </v-row>
 
     <!-- Third Section -->
-    <v-row class="mb-16 mt-16">
-
-
-      <v-col lg="0 d-flex flex-column justify-center" style="min-height: 500px; min-width: 400px;">
-
+    <v-row class="mb-16 mt-16 ">
+      <v-col lg="0 d-flex flex-column justify-center" style="min-height: 500px; min-width: 355px;">
         <v-divider :thickness="3" class="border-opacity-100" width="40px" color="green"></v-divider>
-        <router-link to="/engage" style="text-decoration: none; color: inherit;">
       <h1 style="line-height: 0.6;">Engage.</h1>
-    </router-link>
         <h2 class="mediumText mt-2">Increase Customer Loyalty and Interaction</h2>
         <p>Get feedback from your clients with our robust features that get you to interact with your clients one on one.
         </p>
@@ -76,28 +70,30 @@
           </div>
         </v-row>
         <v-btn @click="$router.push({ name: 'Engage' })" color="green"
-          style=" height: 60px; border-radius: 10px; text-transform: capitalize; width: 70%;">
+          style=" height: 60px; border-radius: 10px; text-transform: capitalize; width: 360px;">
           Engage With Your Customers. </v-btn>
       </v-col>
 
-      <v-col lg="6 pl-md-16" style=" min-width: 400px;">
-        <img src="@/assets/engage.svg" alt="engage" width="100%" />
+      <v-col lg="6  " xs="12" style=" min-width: 320px;">
+        <img src="@/assets/engage.svg" alt="engage" width="100%" height="100%" />
       </v-col>
 
     </v-row>
     <!-- Fourth Section -->
 
-    <v-row class="mb-16 mt-16">
-      <v-col lg="6 pr-md-16" style=" min-width: 400px;">
-        <img src="@/assets/Grow.svg" alt="reach" width="100%" />
+    <v-row class="mb-16 mt-16 ">
+      <v-col  >
+        <img src="@/assets/Grow.svg" max-width="539px" min-width="300px"  alt="reach"
+        srcset="@/assets/Grow.svg 400w,
+        @/assets/Grow.svg 800w,
+        @/assets/Grow.svg 1200w"    
+        />
+        
       </v-col>
 
-      <v-col lg="0 d-flex flex-column justify-center" style="min-height: 500px; min-width: 400px;">
-
+      <v-col lg="0 d-flex flex-column justify-center" style="min-height: 500px; min-width: 335px;">
         <v-divider :thickness="3" class="border-opacity-100" width="40px" color="green"></v-divider>
-        <router-link to="/grow" style="text-decoration: none; color: inherit;">
-      <h1 style="line-height: 0.6;">Engage.</h1>
-    </router-link>
+      <h1 style="line-height: 0.6;">Grow.</h1>
         <h2 class="mediumText">One stop shop for all your clients.</h2>
         <p>Make engaging and reaching your clients easier than it has been before with automated systems which are fast
           giving quick and accurate responses.</p>
@@ -118,7 +114,7 @@
           </div>
         </v-row>
         <v-btn @click="$router.push({ name: 'Grow' })" color="green"
-          style=" height: 60px; border-radius: 10px; text-transform: capitalize; width: 70%;">
+          style=" height: 60px; border-radius: 10px; text-transform: capitalize; width: 360px;">
           Grow Your Business Now </v-btn>
       </v-col>
     </v-row>
@@ -149,17 +145,17 @@ export default {
   
 <style scoped>
 .solution-title {
-
+ text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
   text-align: center;
 
 }
 
 .solution-paragraph {
-  width: 100%;
-  height: 48px;
-  padding-left: 20%;
-  padding-right: 20%;
 
+ 
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;

@@ -1,6 +1,8 @@
 <template>
+  <v-container class=" "  style="min-width: 200px; background-color: #F8F8F8;padding-top: 4rem;padding-left: 57px;
+    ">
   <v-row class="d-flex flex-md-row "
-    style="min-width: 200px; background-color: #F8F8F8; padding-left: 4rem; padding-right: 4rem; padding-top: 4rem;">
+   >
     <v-col xs="0" lg="0 d-flex flex-column justify-center" style="margin-right: 6rem; ">
       <!-- <h1 class="mt-16">
           Making
@@ -10,21 +12,32 @@
          <span> Interaction Count</span>
         </h1> -->
 
-      <h1 class="mb-4">
-        Making <span class="orange-box">Every</span> Interaction Count
+      <h1 class="mb-4" style="width: 349px;"> Making <span class="orange-box">Every</span>       </h1>
+
+        <h1> Interaction Count
       </h1>
       <p>Our cutting-edge platform empowers you to connect with your customers,
         foster meaningful engagement, and propel the growth of your business.</p>
-      <v-btn color="green" class=" mt-4 "
+
+       
+    <v-row class="d-sm-flex  mt-4 ml-1 d-md-none " >
+
+      <v-btn color="#26A842" style="text-transform: capitalize;" @click="$router.push('/login')"> Login</v-btn>
+      <v-btn variant="tonal" style="background-color:#26A842; color: white; text-transform: capitalize; "
+          class="border-radius-16 ml-4" @click="$router.push('/signup')">
+          Sign up
+        </v-btn>
+    </v-row>
+
+      <v-btn color="green" class=" mt-4 d-none d-sm-flex "
         style=" height: 60px; border-radius: 10px; text-transform: capitalize; width: 50%;">
         Get Started</v-btn>
     </v-col>
-
-
-    <v-col lg="0" xs="0" style="min-width: 600px; max-width: fit-content; ">
+    <v-col lg="0" xs="12" style=" max-width: fit-content; margin: 0 auto; ">
       <img width="100%" src="@/assets/hero.svg" alt="hero image">
     </v-col>
   </v-row>
+</v-container>
 </template>
 
 <script>

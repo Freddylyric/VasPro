@@ -4,6 +4,7 @@
         <ProductsComponent />
         <SolutionsComponent />
         <DevelopersComponent />
+        <BrandComponent />
         <Locations />
         <AppStore />
         <Footer />
@@ -17,6 +18,8 @@ import ProductsComponent from '../components/landing_components/ProductsComponen
 import SolutionsComponent from '../components/landing_components/SolutionsComponent.vue'
 import DevelopersComponent from '../components/landing_components/DevelopersComponent.vue'
 import Locations from '../components/landing_components/Locations.vue'
+import BrandComponent from '../components/landing_components/BrandsComponent.vue'
+
 import AppStore from '@/components/landing_components/AppStore.vue'
 import Footer from '../components/Footer.vue'
 
@@ -28,6 +31,7 @@ export default {
         ProductsComponent,
         SolutionsComponent,
         DevelopersComponent,
+        BrandComponent,
         Locations,
         AppStore,
         Footer
