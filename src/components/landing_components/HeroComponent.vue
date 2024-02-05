@@ -1,5 +1,5 @@
 <template>
-  <v-container class=" "  style="min-width: 200px; background-color: #F8F8F8;padding-top: 4rem;padding-left: 57px;
+  <v-container class="ml-4 ml-md-16 mr-16"  style="min-width: 200px; background-color: #F8F8F8;padding-top: 4rem;
     ">
   <v-row class="d-flex flex-md-row "
    >

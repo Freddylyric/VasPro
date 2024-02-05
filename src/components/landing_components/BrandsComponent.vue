@@ -1,6 +1,6 @@
 <template>
     <div class=" mt-16 " style="background-color: #F8FCF9;  ">
-        <v-row class="">
+        <v-row class="ml-md-16 mr-16">
             <v-container  class=" custom-container" style="max-width: 50%;  min-width: 430px;">
             <v-row >
                 <v-col  style="max-width: 227px;">
@@ -45,8 +45,7 @@
           </v-col >
         </v-row>
         </v-container>
-            <v-col class="custom-containertitle" style="max-width: 50%; text-align: center; justify-content: center;" >
-                
+            <v-col class="custom-containertitle" style="max-width: 50%; text-align: center; justify-content: center;" >     
         <v-container class="rounded-container">
           <h1 class="title">
             Join the group of brands that use <span class="greenText">Vaspro</span> to connect with their customers
@@ -60,17 +59,7 @@
 </template>
 
 <style scoped>
-.custom-container {
-  /* Add your default styling for padding and margin */
-  padding-left: 117px;
-    margin: 10px;
 
-  @media (max-width: 600px) {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-}
 .custom-containertitle {
   /* Add your default styling for padding and margin */
   padding-left: 117px;
@@ -88,9 +77,12 @@
 
   }
 }
-.title{
-    font-family: Poppins;
-font-size: 38px;
+@media screen   and (min-width: 400px){
+    .title{
+  font-size:2.25rem;
+  font-weight: 800;
+  line-height: 48px;
+  font-family: Poppins;
 font-weight: 700;
 line-height: 57px;
 letter-spacing: 0em;
@@ -102,8 +94,10 @@ max-height: 228px;
 margin-top: 100px;
 margin-bottom: 40px;
 font: Poppins;
-
 }
+
+  }
+
 .ex{
     width: 227px;
     height: 113px;

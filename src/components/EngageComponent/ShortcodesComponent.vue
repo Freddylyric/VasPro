@@ -1,6 +1,5 @@
 <template>
-            <v-container  mt-16>
-
+   <v-container  class="mt-16">
     <div >
     <v-row class="mb-8 mt-8"> 
       <v-col lg="6" class="survey" >
@@ -8,8 +7,8 @@
         <p style="font-size: 16px; color: #183B56; line-height: 1.5; margin-bottom: 10px;">
           Survey is a powerful way to engage with your audience, understand their needs, and ultimately win more clients. <br> <br> <br>Our user-friendly system seamlessly integrates surveys with SMS campaigns, providing you with a comprehensive solution to elevate your marketing efforts and achieve sustainable growth...
 </p>
-          <v-row class="mt-4">
-       
+
+   <v-row class="mt-4">
         </v-row>
       </v-col>
       <v-col lg="6" class="survey">

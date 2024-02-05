@@ -1,28 +1,32 @@
 <template>
-    <v-row class="d-flex flex-md-row justify-center" style="padding: 2rem; background-color: #F7F7F7;">
+  <v-div >
+    <v-col class="ml-md-16 mr-md-16 mt-16">
+    <v-row >
   
       <!-- Content Column -->
-      <v-col lg="6" md="8" xs="12" class="pr-md-4">
-        <h1>Download App Now & enjoy our services</h1>
-        <p style="font-size: 20px; font-weight: 600; margin-top: 6px;">
+      <v-col  style="background-color: #F7F7F7 width: 50%;" >
+        <h1 class="title-text">Download App Now & enjoy our services</h1>
+        <p class="mediumText">
           Experience Vaspro at the palm of your hands, get it on both Play & App store.
         </p>
         <v-row class="mt-5">
           <v-col md="6" xs="12">
-            <img src="@/assets/playstore.svg" alt="playstore" width="100%">
+            <img src="@/assets/playstore.svg" alt="playstore" width="100%" height="100%">
           </v-col>
-          <v-col md="6" xs="12">
+          <v-col md="6" xs="12" class="mt-2">
             <img src="@/assets/appstore.svg" alt="appstore" width="100%">
           </v-col>
         </v-row>
       </v-col>
   
       <!-- Image Column -->
-      <v-col lg="6" md="4" xs="12" class="d-flex flex-column justify-center order-lg-2 order-md-1">
-        <img src="@/assets/vasproapp.svg" alt="appstore" width="100%" min-width="403px">
+     
+      <v-col lg="6  " xs="12" style=" min-width: 320px;">
+        <img src="@/assets/vasproapp.svg" alt="engage" width="100%" height="100%" />
       </v-col>
-  
-    </v-row>
+    </v-row>  
+  </v-col>
+    </v-div>
   </template>
   
   
@@ -33,5 +37,24 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+@media screen   and (min-width: 400px){
+  .title-text{
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 50px;
+  text-align: center;
+  justify-self: center;
+  text-align: center;
+  margin: 20px;
+  
+
+}
+.mediumText {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+  }
+</style>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="prod-container mt-16 ml-16 mr-16" >
+  <div class="prod-container mt-16 ml-4 ml-md-16 mr-16  " >
     <!-- First Section -->
 
     <v-col class="" >
@@ -46,7 +46,7 @@
     </v-row>
 
     <!-- Third Section -->
-    <v-row class="mb-16 mt-16 ">
+    <v-row class="mb-16 mt-16 ml-md-4 ">
       <v-col lg="0 d-flex flex-column justify-center" style="min-height: 500px; min-width: 355px;">
         <v-divider :thickness="3" class="border-opacity-100" width="40px" color="green"></v-divider>
       <h1 style="line-height: 0.6;">Engage.</h1>
@@ -74,7 +74,7 @@
           Engage With Your Customers. </v-btn>
       </v-col>
 
-      <v-col lg="6  " xs="12" style=" min-width: 320px;">
+      <v-col lg="6" xs="12" style=" min-width: 320px;">
         <img src="@/assets/engage.svg" alt="engage" width="100%" height="100%" />
       </v-col>
 
@@ -88,6 +88,7 @@
         @/assets/Grow.svg 800w,
         @/assets/Grow.svg 1200w"    
         />
+        
         
       </v-col>
 
@@ -144,48 +145,55 @@ export default {
 </script>
   
 <style scoped>
-.solution-title {
- text-align: center;
-  font-size: 45px;
+@media screen   and (min-width: 400px){
+  .solution-title {
+  font-size: 2.25rem;
   font-weight: 700;
+  width: 100%;
   line-height: 52px;
   text-align: center;
 
 }
-
 .solution-paragraph {
 
  
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #183B56;
+font-size: 1.125rem;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+color: #183B56;
 }
 
 .largeText {
 
-  font-style: normal;
-  font-size: 3.5rem;
-  font-weight: 800;
-  line-height: 52px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #183B56;
+font-style: normal;
+font-size: 3.5rem;
+font-weight: 800;
+line-height: 52px;
+letter-spacing: 0em;
+text-align: left;
+color: #183B56;
 }
-
 .mediumText {
 
-  font-style: normal;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #183B56;
-  margin-bottom: 20px;
+font-style: normal;
+font-size: 1.125rem;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #183B56;
+margin-bottom: 20px;
 }
+  }
+
+
+
+
+
+
+
 
 .pg {
   margin-bottom: 20px;

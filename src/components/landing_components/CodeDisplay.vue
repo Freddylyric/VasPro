@@ -1,14 +1,13 @@
 <!-- CodeDisplay.vue -->
 <template>
   <div>
-    <v-col     >
+    <v-col>
     <div class="code-display">
       <div class="language-tabs">
         <button v-for="language in languages" :key="language" @click="selectLanguage(language)"
           :class="{ 'language-tab': true, 'selected-language': language === selectedLanguage }">
           {{ language }}
         </button>
-
       </div>
       <v-divider :thickness="1" class="border-opacity-100" color="white"></v-divider>
       <pre class="code-container ">
@@ -96,10 +95,10 @@ export default {
 }
 
 .code-display {
-  width: 575px;
   background-color: #305067;
   border: 1px solid #DBDBDB;
   border-radius: 15px;
+
 }
 
 

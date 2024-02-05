@@ -1,13 +1,11 @@
 <template>
-  <div class="dev-container pr-4 pl-16">
+  <div class="dev-container pl-md-16 pr-16">
 
-    <v-row>
-
-      <v-col lg="6" >
+    <v-row class="">
+      <v-col  >
         <h2 class="largeText">Send your First <span class="orange-box">Message </span> in Minutes with Vaspro APIs</h2>
         <p class="mediumText">The VasPro Developer API Documentation offers all the instructions you need to connect and
           use our services. Our development support team is ready to help you whenever you need help.</p>
-       
           <v-row class="dev-buttons mt-8 ml-4">
           <v-btn color="#183B56"
             style="border: 2px solid; border-color: white; border-radius: 10px; height: 56px; min-width: 142px; margin-right: 20px; text-transform: capitalize;">
@@ -20,7 +18,7 @@
         </v-row>
       </v-col>
 
-      <v-col  md="6" >
+      <v-col class="d-none d-sm-flex" >
         <code-display :codeSnippets="codeSnippets" :languages="languages"/>
       </v-col>
     </v-row>
@@ -86,8 +84,11 @@ export default {
   justify-content: center;
   align-items: center;
   padding-right: 20px;
+  margin: 0%;
+  padding-left: 10px;
 
 }
+
 
 .largeText {
  font-style: normal;
@@ -95,8 +96,8 @@ export default {
   font-weight: 800;
   line-height: 67px;
   letter-spacing: 0em;
-  text-align: left;
   color: white;
+  white-space: flex-wrap;
   margin-bottom: 20px;
 }
 
@@ -106,7 +107,6 @@ export default {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
-  text-align: left;
   color: white;
   margin-bottom: 20px;
   max-width: 80%;
@@ -114,15 +114,13 @@ export default {
 
 .HbtnX {
   width: 142px;
-
-
-  border-radius: 12px;
+ border-radius: 12px;
   border: 2px solid #FFFFFF;
 }
 
 .orange-box {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   background: linear-gradient(to top, #FF7F00 50%, #193C56 50%);
   background-size: 100% 101%;
   background-position: 0 100%;

@@ -1,9 +1,9 @@
 <template>
 
-    <div class="locations ml-8">
+    <div class="locations  ml-4 ml-md-16 mr-16">
         <v-row>
             <v-col>
-                <h1 class="fontSizeClass font-['Lato']">Join us at our offices in...</h1>
+                <h1 class="title">Join us at our offices in...</h1>
                 <v-list class="pt-16">
                 
     <!-- Nairobi, Kenya -->
@@ -107,41 +107,40 @@ export default {
 
 <style scoped>
 
+
 .locations {
     margin-top: 100px;
   
   }
-.title{
-  font-size: 40px;
+
+  @media screen   and (min-width: 400px){
+    .title{
+  font-size:1.5rem;
   font-weight: 800;
   line-height: 48px;
   font:Lato;
 }
-.small-text {
-  font-size: 16px;
-}
-
-.large-text {
-  font-size: 24px;
-}
-
-
 .city-name {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.125rem;
     line-height: 24px;
     color: #183B56;
     text-align: left;
 
 }
-
 .address {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     color: #183B56;
     text-align: left;
 }
+  }
+
+
+
+
+
 
 .telephone {
     font-weight: 400;

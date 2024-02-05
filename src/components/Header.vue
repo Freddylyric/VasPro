@@ -1,12 +1,19 @@
 <template>
-  <v-app-bar style="padding: 12px 0.8em" app color="white" light elevation="4" elevate-on-scroll>
-    <v-toolbar-title class="logo-container d-sm-flex" style="min-width: 60%;">
-      <img src="../assets/main-logo.svg" class="logo">
-      <span class="logo-text">Vaspro</span>
+  <v-app-bar class="pl-2 pt-4 pl-md-16 " style="height: 100px;" app color="white" light elevation="4" elevate-on-scroll>
+   <v-col>
+    <v-toolbar-title>
+      <div class="logo-container">
+        <img src="../assets/main-logo.svg" class="logo">
+        <span class="logo-text">Vaspro</span>
+      </div>
     </v-toolbar-title>
-  
-    <v-list-item  class=" d-sm-none align-end;
-  "  >
+   </v-col>
+   <v-spacer />
+   <v-spacer />
+   <v-spacer />
+
+
+    <v-list-item  class=" d-sm-none ml-16 "  >
         <v-icon @click="openMenu">mdi-menu</v-icon>
       </v-list-item>
 
@@ -66,8 +73,12 @@ export default {
 
 
 
-<style> .logo-container {
+<style scoped>
+
+.logo-container {
    display: flex;
+   align-items: center;
+   width: 150px;
  }
 
  .logo {
@@ -76,14 +87,9 @@ export default {
    transition: filter 300ms;
  }
 
- .logo-text {
-   font-size: 20px;
-   font-weight: 700;
-   color: #26A842;
-   margin: 10px;
-   width: 100%;
- }
+ 
 
+ 
  .logo:hover {
    filter: drop-shadow(0 0 2em #64ffcbaa);
  }
@@ -92,8 +98,20 @@ export default {
    filter: drop-shadow(0 0 2em #42b883aa);
  }
 
+
+ @media screen   and (min-width: 400px){
+  .logo-text {
+   font-size: 1.5rem;
+   font-weight: 700;
+   line-height: 31px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #26A842;
+   margin: 10px;
+   width: 100px;
+ }
  .h1 {
-   font-size: 24px;
+   font-size: 1.5rem;
    font-weight: 700;
    line-height: 32px;
    letter-spacing: 0em;
@@ -103,4 +121,6 @@ export default {
    margin-left: 0%;
 
  }
+
+  }
 </style>

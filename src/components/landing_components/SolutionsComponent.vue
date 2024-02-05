@@ -1,7 +1,7 @@
 <template>
-  <div class="dev-container ml-16 mr-16  ">
+  <div class="dev-container ml-4 ml-md-16 mr-16 ">
     <v-row>
-    <v-col class="d-flex justify-center align-center">
+    <v-col class="d-flex justify-center align-center ">
       <h1 class="title-text">
         Some <span class="greenText">Common Scenarios </span>
         <br>where Vaspro comes into play...
@@ -10,7 +10,7 @@
   </v-row>
   <p class="mediumText">Get to reach customers and engage growing your business to its full potential</p>
     <div >
-      <v-row class="expansion-panels mb-5 mt-5 ">
+      <v-row class="expansion-panels mb-5 mt-5 ml-md-4 ">
       <div class="expansion-panels-container mt-8">
         <v-expansion-panels >
           <v-expansion-panel class="expansion-panel elevation-5"
@@ -146,8 +146,9 @@ export default {
   text-align: center;
   color: #26A842;
 }
-.title-text{
-  font-size: 45px;
+@media screen   and (min-width: 400px){
+  .title-text{
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 52px;
   text-align: center;
@@ -160,6 +161,10 @@ export default {
   text-align: center;
   font-size: 1.25rem;
 }
+
+  }
+
+
 </style> 
 
 
