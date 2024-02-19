@@ -17,48 +17,99 @@
        
         </v-row>
       </v-col>
-      <v-col lg="6" class="survey">
-        <img src="../../assets/engage.svg"  width="485px" height="309px" />
+      <v-col class="survey" lg="6" xs="12" style=" min-width: 355px;">
+        <img src="../../assets/engage.svg" alt="reach" width="100%" height="309px" />
       </v-col>
     </v-row>
-    <v-row class="column-item" >
-  <v-col >
-    <div  >
-      <h1  style="font-size: 38px; color: #183B56; font-weight: bold; padding-left: 26px;">20%</h1>
-      <h1 style="font-size: 14px; color: #183B56; font-weight: lighter;">Conversion Rates</h1>
-      <!-- Add your content for each column item here -->
-    </div>
-  </v-col>
-  <v-col>
-    <div  >
-      <h1  style="font-size: 38px; color: #183B56; font-weight: bold;  padding-left: 26px;">40%</h1>
-      <h1 style="font-size: 14px; color: #183B56; font-weight: lighter;">Repeat Customers</h1>
-      <!-- Add your content for each column item here -->
-    </div>
-  </v-col>
-  <v-col>
-    <div  >
-      <h1  style="font-size: 38px; color: #183B56; font-weight: bold;  padding-left: 14px;">25%</h1>
-      <h1 style="font-size: 14px; color: #183B56; font-weight: lighter;">Sales Boost</h1>
-      <!-- Add your content for each column item here -->
-    </div>
-  </v-col>
-  <v-col>
-    <div  >
-      <h1  style="font-size: 38px; color: #183B56; font-weight: bold;">80%</h1>
-      <h1 style="font-size: 14px; color: #183B56; font-weight: lighter;"> Feedback</h1>
-      <!-- Add your content for each column item here -->
-    </div>
-  </v-col>
-  <v-col>
-    <div  >
-      <h1  style="font-size: 38px; color: #183B56; font-weight: bold;  padding-left: 28px;">15%</h1>
-      <h1 style="font-size: 14px; color: #183B56; font-weight: lighter;">Reduced marketing costs</h1>
-      <!-- Add your content for each column item here -->
-    </div>
-  </v-col>
+    <v-row class="column-item  ml-md-2 d-none d-sm-flex" style="background-color: #F8FCF9; height: 100px;">
+  <v-col class="d-flex justify-center">
+<div  >
+<h1 class="title-text   " >20%</h1>
+<h1 class="mediumText" >Conversion Rates</h1>
+<!-- Add your content for each column item here -->
+</div>
+</v-col>
+<v-col class="d-flex justify-center  ">
+<div  >
+<h1 class="title-text">40%</h1>
+<h1  class="mediumText" >Repeat Customers</h1>
+<!-- Add your content for each column item here -->
+</div>
+</v-col>
+<v-col class="d-flex justify-center ">
+<div  >
+<h1 class="title-text">25%</h1>
+<h1  class="mediumText" >Sales Boost</h1>
+<!-- Add your content for each column item here -->
+</div>
+</v-col>
+<v-col class="d-flex justify-center ">
+<div  >
+<h1 class="title-text">80%</h1>
+<h1 class="mediumText" > Feedback</h1>
+</div>
+</v-col>
+<v-col class="d-flex justify-center ">
+<div  >
+<h1 class="title-text">15%</h1>
+<h1 class="mediumText" >Reduced marketing costs</h1>
+<!-- Add your content for each column item here -->
+</div>
+</v-col>  
 </v-row>
 
+<v-col class="justify-center align-centre d-md-none m-0 p-0">
+  <v-col  style="background-color: #F8FCF9" >
+    <v-row class="m-0" style="height: 80px; ">
+  <v-col class="d-flex justify-center">
+<div  >
+<h1 class="mtext" >20%</h1>
+<h1 class="mmtext" >Conversion Rates</h1>
+<!-- Add your content for each column item here -->
+</div>
+</v-col>
+<v-divider vertical ></v-divider>
+
+<v-col class="d-flex justify-center  ">
+<div>
+<h1 class="mtext">40%</h1>
+<h1  class="mmtext" >Repeat Customers</h1>
+<!-- Add your content for each column item here -->
+</div>
+</v-col>
+</v-row>
+<v-divider horizontal  style="height: 100%;"></v-divider>
+  </v-col>
+  <v-col  style="background-color: #F8FCF9" >
+    <v-row class="m-0" style="height: 80px; ">
+  <v-col class="d-flex justify-center">
+<div  >
+<h1 class="mtext" >25%</h1>
+<h1 class="mmtext" >Conversion Rates</h1>
+<!-- Add your content for each column item here -->
+</div>
+</v-col>
+<v-divider vertical ></v-divider>
+
+<v-col class="d-flex justify-center  ">
+<div  >
+<h1 class="mtext">80%</h1>
+<h1  class="mmtext" >Repeat Customers</h1>
+<!-- Add your content for each column item here -->
+</div>
+</v-col>
+</v-row>
+<v-divider horizontal  style="height: 100%;"></v-divider>
+  </v-col>
+  
+
+  <v-col class="d-flex justify-center  " style="background-color: #F8FCF9">
+<div  >
+<h1 class="mtext">15%</h1>
+<h1 class="mmtext" >Reduced marketing costs</h1>
+</div>
+</v-col>  
+</v-col>
   <h1  class="boost" style="color: #183B56; font-weight: 600; font-size:32px; padding-top: 80px;">Features That Set Us Apart.</h1>
 <v-container class="survey">
 
@@ -155,11 +206,75 @@ watch: {
   overflow: hidden;
   margin-bottom: 20px;
 }
+
 .column-item{
   background-color: #F8FCF9;
-  width: 1150px;
   margin-left: 20px;
   margin-right: 20px;
+
+
+  @media (max-width: 600px) {
+    height: 415px;
+    width: 310px;
+    margin-bottom: 120px;
+  
+  }
 }
+@media screen   and (min-width: 400px){
+  .title-text{
+    font-family: Poppins;
+font-size: 2.5rem;
+font-weight: 800;
+line-height: 45px;
+letter-spacing: 0em;
+text-align: center;
+
+
+}
+.mtext{
+  font-family: Poppins;
+font-size: 2rem;
+font-weight: 600;
+letter-spacing: 0em;
+text-align: center;
+background-color: #F8FCF9;
+}
+.mmtext{
+  font-family: Poppins;
+font-size: 1rem;
+font-weight: 400;
+letter-spacing: 0em;
+text-align: center;
+background-color: #F8FCF9;
+
+
+}
+.mtitle-text{
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 39px;
+  text-align: center;
+  justify-self: center;
+  
+
+}
+.ready{
+  font-family: Poppins;
+font-size: 1.5rem;
+font-weight: 800;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.mediumText {
+  text-align: center;
+  font-size: 1rem;
+  font-size: 14px;
+   color: #183B56;
+     font-weight: 400;
+}
+
+  }
 
 </style>

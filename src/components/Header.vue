@@ -46,6 +46,7 @@
 export default {
   name: 'Header',
   data: () => ({
+    
     menus: [
       {
         title: 'Products',

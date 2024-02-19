@@ -29,7 +29,6 @@ const routes = [
   { path: '/login', name: 'Login', component: Login},
   { path: '/verify', name: 'Verify', component: Verify},
   { path: '/forgot-password', name: 'ForgotPassword', component: ForgotPassword},
-
   { path: '/engage', name: 'Engage', component: EngageComponent },
   { path: '/grow', name: 'Grow', component: GrowComponent },
 

@@ -4,12 +4,14 @@
 
     <v-row>
 
-        <v-col lg="0" xs="0" style="min-width: 500px; max-width: fit-content;">
+        <v-col lg="0" xs="0" style="min-width: 350px; max-width: fit-content;">
             <img width="100%" src="@/assets/login.svg" alt="hero image">
         </v-col>
 
         <v-col class="d-flex flex-column justify-center">
-            <img src="@/assets/main-logo.svg" class="logo">
+            <v-col class="survey" lg="6" xs="12" style=" min-width: 355px;">
+        <img src="@/assets/main-logo.svg" alt="reach" width="100%" height="309px" />
+      </v-col>
             <h1 style="text-align: center; text-transform: uppercase; margin-top: 16px;">Login</h1>
 
 

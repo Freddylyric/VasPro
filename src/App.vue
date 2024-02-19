@@ -4,7 +4,7 @@
     <v-main>
     
         <!-- <Landing /> -->
-        <Header :menus=" menus" />
+        <Header :menus="menus" />
         <router-view></router-view>
 
     </v-main>
@@ -29,6 +29,7 @@ export default {
           title: 'Products',
           route: '/products',
         },
+        
         {
           title: 'Solutions',
           route: '/solutions',
